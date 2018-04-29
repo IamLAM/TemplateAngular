@@ -6,9 +6,24 @@ export class ProductosService {
 
 productos:any[]=[];
 
+
   constructor(public _http:Http) {
     this.cargarProductos();
+
    }
+
+
+cargarProducto(cod:string){
+
+
+ return this._http.get(`https://htmlangular.firebaseio.com/productos/${cod}.json`);
+
+
+
+
+
+}
+
 
 
   cargarProductos(){
