@@ -9,7 +9,7 @@ import {ProductosService} from "../../services/productos.service";
 })
 export class BodyComponent implements OnInit {
 
-  constructor(private _ps:ProductosService) { }
+  constructor(public _ps:ProductosService) { }
 
   ngOnInit() {
   }
