@@ -10,7 +10,7 @@ import {ActivatedRoute } from "@angular/router";
 export class ItemComponent  {
 producto:any=undefined;
 cod:any=undefined;
-  constructor(public _router:ActivatedRoute, _ps:ProductosService) {
+  constructor(public _router:ActivatedRoute,public _ps:ProductosService) {
 
     this._router.params.subscribe(parametros=>{
 
