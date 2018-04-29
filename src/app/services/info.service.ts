@@ -7,7 +7,7 @@ import {Http} from "@angular/http";
 export class InfoService {
 
   info:any={};
-  equipo:any={};
+  equipo:any[]=[];
   constructor(public _http:Http) {
 
     this.infoPagina();
